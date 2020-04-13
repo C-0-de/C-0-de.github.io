@@ -8,6 +8,7 @@ tagline:          'Its About Coding First'
 description:      'Beginner Programming Tutor, with a focus on practical skills and understanding.'
 url:              https://github.com/megonemad1
 baseurl:          '/'
+google_analytics: 'UA-111506466-2'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
