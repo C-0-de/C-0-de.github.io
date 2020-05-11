@@ -69,7 +69,7 @@ A variable name provides the text representation or identifier for its stored va
 - descriptive
 - concise
 - contextual
-
+ 
 A meaningful variable name is difficult to define as it can mean a lot of things depending on the situation. Within a broad content, meaningful refers to a name which readable. It relates to the information a variable stores.
 
 Descriptive names tell you what they store. A descriptive name will also tell you what information the variable does not have.
