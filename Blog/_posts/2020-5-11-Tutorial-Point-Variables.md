@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Tutorial Point Variables"
+comments: true
+tags:
+    - general programming
+    - beginner
+    - variables
+---
 ## Foreword
  There are a lot of programming tutorials available online which all want to get you started fast. This is important, but the very foundations of programming should be solid.
 
