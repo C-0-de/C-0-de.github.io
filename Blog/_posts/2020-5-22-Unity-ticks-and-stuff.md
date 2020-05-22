@@ -14,21 +14,21 @@ You end up with weird code that is checking over and over - like children on a l
 ![ Any second now... ](https://media3.giphy.com/media/axdZ8oK30cTCM/giphy.gif)
 A code example of this:
 
-float timer = 0;
-float cooldown=30;
-private void Update() {
-    timer-=Time.deltaTime;
-    if (timer<=0){
-    DoThing();
-    timer = cooldown;
+    float timer = 0;
+    float cooldown=30;
+    private void Update() {
+        timer-=Time.deltaTime;
+        if (timer<=0){
+        DoThing();
+        timer = cooldown;
+        }
     }
-}
 
 or worse...
 
-float start =Time.time();
-while (Time.time()-start>0){}
-DoThing();
+    float start =Time.time();
+    while (Time.time()-start>0){}
+    DoThing();
 
 
 This is fine. It works. But it is also ugly and takes many lines to express the concept of “do this thing later”.
@@ -60,14 +60,14 @@ Unity coroutines have functions available in them, like WaitForSeconds(s). This 
 
 ![ alarm clock ](https://i.giphy.com/media/gBW8Qgfaa2ije/giphy.webp)
 Here’s an example of how to set this type of alarm...
-void Awake()
-{
-  StartCoroutine(DelayedGratification());
-}
+    void Awake()
+    {
+    StartCoroutine(DelayedGratification());
+    }
 
-IEnumerator DelayedGratification ()
-{
-    Debug.Log("The antici-");
-     yield return new WaitForSeconds(10);
-    Debug.Log("pation");
-}
+    IEnumerator DelayedGratification ()
+    {
+        Debug.Log("The antici-");
+        yield return new WaitForSeconds(10);
+        Debug.Log("pation");
+    }
