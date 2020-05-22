@@ -28,7 +28,7 @@ or worse
 
 this is fine, it works. Its ugly and takes many lines to express the concept of "do this thing later. but we can be more productive with our time. why don't we set an alarm and come back later.
 
-![ got places to be! ](https://media.giphy.com/media/SU6pRekIDqhna/giphy.gif)
+![ got places to be! ](https://i.giphy.com/media/SU6pRekIDqhna/giphy.webp)
  
 ## Two things at once
 in Unity most things happen in one thread. this is fine but it does make the polling method. the while method particularly, problematic. 
@@ -39,7 +39,7 @@ thats because an IEnumerable has some state to know where it is, and how to get 
 whats this got to do with  coroutines, well what we use this to break up code. once its broken up we can swap back and forth between all the different jobs we have to do. 
 like spinning plates, we go round each in turn keeping them stable. 
 
-![ oh Salem  ] (https://media.giphy.com/media/EndmKkbSJeFwY/giphy.gif)
+![ oh Salem ](https://i.giphy.com/media/EndmKkbSJeFwY/giphy.webp)
 
 ## I yield my time
 so now we know that we can write code that can get split up. we need to tell it where to split though as the computer cant guess, it doesn't know when would be safe.
@@ -47,7 +47,8 @@ roll on the yield key word. this is the magic incantation to say I'm done for no
 
 ## Unity Time
 till now its been a bit abstract, but now bringing it together. Unity  coroutines have functions avalable in them like WaitForSeconds(s). this lets your function set an alarm to continue execution later.
-![ alarm clock ](https://media.giphy.com/media/gBW8Qgfaa2ije/giphy.gif)
+
+![ alarm clock ](https://i.giphy.com/media/gBW8Qgfaa2ije/giphy.webp)
 
 here's an example of how to set this type of alarm.
 
